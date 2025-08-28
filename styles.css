@@ -53,6 +53,7 @@ body{
     grid-template: repeat(4, 1fr) / repeat(3, 1fr);
     gap: 20px;
     background-color:rgb(206, 206, 206);
+    height: 100vh;
     
 }
 input{
