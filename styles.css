@@ -1,0 +1,229 @@
+p{
+    border: 0px;
+}
+*{
+    padding: 0%;
+     font-family: "Roboto", sans-serif;
+     font-size: large;
+}
+div, body{
+    border-radius: 20px;
+    padding: 10px;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template: 250px 2fr 2fr 2fr 2fr 2fr /repeat(4,1fr);
+}
+.sidebar{
+    grid-area: 1 /1 / 7 / 2;
+    display: grid;
+    grid-template-rows: 0.3fr 1.5fr 3fr ;
+    gap: 20px;
+    background-color: rgb(50, 147, 238);
+    color: white;
+    
+}
+.sidebar div{
+    font-size: 30px;
+}
+.sidebar > div:first-child{
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+
+.header{
+    grid-area: 1 / 2 / 2 / 5;
+    display: flex;
+    gap: 20px;
+    background-color:rgb(243, 230, 213) ;
+    margin-bottom: 0px;
+}
+.left,
+.right{
+    flex: 1;
+  display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 20px;
+}
+.content{
+    grid-area: 2 / 2 / 7 / 5 ;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    gap: 20px;
+    background-color:rgb(206, 206, 206);
+    
+}
+input{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+     background-color: rgb(230, 229, 229);
+}
+.projects, .announcements, .trending{
+     background-color: rgb(63, 61, 61);
+}
+
+.dash{
+    align-self: center;
+   
+    font-size: 30px;
+}
+.second{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,1fr);
+    gap: 20px;
+    font-size: 20px;
+}
+.third{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+
+}
+.search{
+    align-self: center;
+}
+input{
+    width:90%;
+}
+.down{
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+.projects{
+    grid-area: 1 / 1 / 5 / 3;
+   
+}
+.announcements{
+    grid-area: 1 / 3 / 3 / 4;
+    margin-bottom: 30px;
+}
+.trending{
+    grid-area: 3 / 3 / 5 / 4;
+}
+.proj{
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 1fr;
+    gap: 10px;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 100%;
+}
+.ann{
+    display: grid;
+    grid-template: repeat(3, 230px) ;
+    gap: 30px;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 100%;
+}
+.trend{
+    display: grid;
+    grid-template: repeat(3, 230px) ;
+    gap: 15px;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 100%;
+}
+.dash-board{
+    font-size: 12px;
+   position: relative;
+   top: 5px;
+}
+svg{
+height: 40px;
+vertical-align: middle;
+
+}
+.circle{
+   height: 70px;
+   width: 70px;
+      background-image: url("https://picsum.photos/800/600");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+     
+}
+.up{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30%;
+    padding-left: 20%;
+
+}
+.greet{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.down div{
+    border-radius: 10%;
+    width: 100px;
+    text-align: center;
+     background-color: rgb(50, 147, 238);
+
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.sep{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.circle-trending{
+   height: 70px;
+   width: 70px;
+      background-image: url("https://picsum.photos/600/400");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+     
+}
+.other-users{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+} 
+.proj > div{
+    border-left: 10px solid rgb(72, 168, 247);
+    border-radius: 10px;
+    background-color: white;
+}  
+.content > div{
+   
+    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+}
+.announcements > div, .trending > div{
+    background-color: white;
+}
+.content p{
+    background-color: white;
+    margin: 0px;
+}
+.announcements .ann div{
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+}
+strong{
+    font-size: 22px;
+    font-style: italic;
+}
+p[class*="back"]{
+    background-color: rgb(206, 206, 206);
+}
+.projects, .announcements, .trending{
+   margin: 20px;
+   margin-bottom: 50px;
+}
+
